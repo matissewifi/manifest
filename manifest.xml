@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!--
+    * target: matisse
+    * date: 07.05.2018
+    * rom: LineageOS 15.1
+    -->
+    
+        <!-- Remote -->
+        <remote fetch="https://git.sphere.ly" name="sph" />
+        <remote fetch="https://github.com/LineageOS" name="LineageOS"/>
+
+        <!-- Device -->
+        <project name="matisse/android_device_samsung_matissewifi" path="device/samsung/matissewifi" remote="sph" revision="n7x-caf" />
+        <project name="matisse/android_device_samsung_matisse3g" path="device/samsung/matisse3g" remote="sph" revision="m-caf" />
+        <project name="matisse/android_device_samsung_matisselte" path="device/samsung/matisselte" remote="sph" revision="m-caf" />
+        <project name="matisse/android_device_samsung_matisse-common" path="device/samsung/matisse-common" remote="sph" revision="n7x-caf" />
+        <project name="matisse/android_device_samsung_msm8226-common" path="device/samsung/msm8226-common" remote="sph" revision="n7x-caf" />
+        <project name="sub77/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="n7x-caf" />
+  
+        <!-- Kernel -->
+        <project name="matisse/android_kernel_samsung_matisse" path="kernel/samsung/matisse" remote="sph" revision="n7x-caf" />
+
+        <!-- Vendor -->
+        <project name="matisse/android_vendor_samsung_matissewifi" path="vendor/samsung/matissewifi" remote="sph" revision="n7x-caf" />
+        <project name="matisse/android_vendor_samsung_matisse3g" path="vendor/samsung/matisse3g" remote="sph" revision="m-caf" />
+        <project name="matisse/android_vendor_samsung_matisselte" path="vendor/samsung/matisselte" remote="sph" revision="m-caf" />
+        <project name="matisse/android_vendor_samsung_matisse-common" path="vendor/samsung/matisse-common" remote="sph" revision="n7x-caf" />
+
+        <!-- Hardware -->
+        <project name="android_hardware_samsung" path="hardware/samsung" remote="LineageOS" revision="cm-14.1" />
+
+        <!-- Misc -->
+        <project name="android_external_stlport" path="external/stlport" remote="LineageOS" revision="cm-14.1" />
+        <project name="android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="LineageOS" revision="cm-14.1" />
+
+</manifest>
