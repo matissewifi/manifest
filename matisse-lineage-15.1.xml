@@ -27,6 +27,9 @@
         <project name="matisse/android_vendor_samsung_matisse3g" path="vendor/samsung/matisse3g" remote="sph" revision="m-caf" />
         <project name="matisse/android_vendor_samsung_matisselte" path="vendor/samsung/matisselte" remote="sph" revision="m-caf" />
         <project name="matisse/android_vendor_samsung_matisse-common" path="vendor/samsung/matisse-common" remote="sph" revision="n7x-caf" />
+        <!-- strangely enough it seems that msm8974 graphics-vendor is required.
+             TODO: remove this binary if possible  -->
+        <project name="TheMuppets/proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="cm-14.1" />
 
         <!-- Hardware -->
         <project name="android_hardware_samsung" path="hardware/samsung" remote="LineageOS" revision="cm-14.1" />
