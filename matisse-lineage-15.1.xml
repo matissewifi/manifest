@@ -11,7 +11,7 @@
         <remote fetch="https://github.com/LineageOS" name="LineageOS"/>
 
         <!-- Device -->
-        <project name="matissewifi/device_matissewifi" path="device/samsung/matissewifi" remote="github" revision="lineage-15.1" />
+        <project name="matissewifi/device_matissewifi" path="device/samsung/matissewifi" remote="github" revision="lineage15" />
         <!-- We're not ready for matisse3g yet -->
         <!-- <project name="matisse/android_device_matisse3g" path="device/samsung/matisse3g" remote="sph" revision="m-caf" /> -->
         <project name="matissewifi/device_matisselte" path="device/samsung/matisselte" remote="github" revision="lineage-15.1" />
