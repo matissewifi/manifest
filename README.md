@@ -1,4 +1,4 @@
-## Setup Galaxy TAB 4 for Lineage-15.1 based rom
+## Setup Galaxy TAB 4 for Lineage-14.1/CM-14.1 based rom
 
 * Download supported sources (LineageOS, AOSCP, RR, etc...)
 * Once this is download, clone this repo to .repo/local_manifests then sync repositories again
