@@ -6,46 +6,31 @@
     * rom: LineageOS/CM 14.1
     -->
     
-        <!-- Remote -->
-        <remote fetch="https://git.sphere.ly" name="sph" />
-        <remote fetch="https://github.com/LineageOS" name="LineageOS"/>
-
-        <!-- Device -->
-        <project name="matissewifi/device_matissewifi" path="device/samsung/matissewifi" remote="github" revision=" cm-14.1" />
-        <!-- We're not ready for matisse3g yet -->
-        <!-- <project name="matisse/android_device_matisse3g" path="device/samsung/matisse3g" remote="sph" revision="cm-14.1" /> -->
-        <project name="matissewifi/device_matisselte" path="device/samsung/matisselte" remote="github" revision=" cm-14.1" />
-        <project name="matissewifi/device_matissecommon" path="device/samsung/matisse-common" remote="github" revision=" cm-14.1" />
-        <project name="matissewifi/device_msm8226-common" path="device/samsung/msm8226-common" remote="github" revision="cm-14.1" />
-        <project name="matissewifi/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="cm-14.1" />
-  
-        <!-- Kernel -->
-        <project name="matissewifi/kernel" path="kernel/samsung/msm8226" remote="github" revision="cm-14.1" />
-
-        <!-- Vendor -->
-        <project name="matisse/android_vendor_samsung_matissewifi" path="vendor/samsung/matissewifi" remote="github" revision="cm-14.1" />
-        <!--<project name="matisse/android_vendor_samsung_matisse3g" path="vendor/samsung/matisse3g" remote="github" revision="cm-14.1" />-->
-        <project name="matisse/android_vendor_samsung_matisselte" path="vendor/samsung/matisselte" remote="github" revision="cm-14.1" />
-        <project name="matisse/android_vendor_samsung_matisse-common" path="vendor/samsung/matisse-common" remote="github" revision="cm-14.1" />
-        <!-- strangely enough it seems that msm8974 graphics-vendor is required.
-             TODO: remove this binary if possible  -->
-        <project name="TheMuppets/proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="cm-14.1" />
- 
-		<!-- Lineage Depdence For All Samsung Devices  -->
-		<project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="LineageOS" revision="cm-14.1" />
-		<project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="LineageOS" revision="cm-14.1" />
-		<project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="LineageOS" revision="cm-14.1" />
-		<project name="LineageOS/android_external_stlport" path="external/stlport" remote="LineageOS" revision="cm-14.1" />
-		<project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="LineageOS" revision="cm-14.1" />
-		<project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="LineageOS" revision="cm-14.1" />
+  <!-- Remote -->
+  <!-- <remote fetch="https://git.sphere.ly" name="sph" />
+  <remote fetch="https://github.com/LineageOS" name="LineageOS"/> -->
 	
-		<!-- TWRP -->
-		<!-- <project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" revision="android-8.1" groups="pdk" /> -->
-		<!-- <project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="github" revision="android-7.1" /> -->
-		<!-- <project name="BAProductions/twrp_device_samsung_matisse" path="device/samsung/matisse" remote="github" revision="twrp" /> -->
-		
-		<!-- Busy Box Support -->
-		<!-- android-8.1 doesn't play well with cm-14.1's toybox -->
-		<project name="LineageOS/android_external_busybox" path="external/busybox" remote="LineageOS" revision="cm-14.1" />
+  <!-- Devices -->
+  <project name="matissewifi/android_device_samsung_matissewifi" path="device/samsung/matissewifi" remote="github" revision="cm-14.1" />
+  <project name="matissewifi/android_device_samsung_matisse-common" path="device/samsung/matisse-common" remote="github" revision="cm-14.1" />
+  <project name="matissewifi/android_device_samsung_msm8226-common" path="device/samsung/msm8226-common" remote="github" revision="cm-14.1" />
+  
+  <!-- vendor libs -->
+  <project name="matissewifi/android_vendor_samsung_matissewifi" path="vendor/samsung/matissewifi" remote="github" revision="cm-14.1" />
+  <project name="matissewifi/android_vendor_samsung_matisse-common" path="vendor/samsung/matisse-common" remote="github" revision="cm-14.1" />
+  <project name="matissewifi/android_kernel_samsung_matisse" path="kernel/samsung/msm8226" remote="github" revision="cm-14.1" />
+  <project name="matissewifi/android_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="cm-14.1" />
+  
+  <!-- Vendor Extra -->
+  <project name="BAProductions/vendor_extra" path="vendor/extra" remote="github" revision="cm-14.1" />
+  
+  <!-- Remote -->
+  <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
 
 </manifest>
