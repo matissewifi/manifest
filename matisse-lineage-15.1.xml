@@ -2,40 +2,27 @@
 <manifest>
     <!--
     * target: matisse
-    * date: 07.05.2018
-    * rom: LineageOS 15.1
+    * date: 02.20.2010
+    * rom: lineage-15.1
     -->
-    
-        <!-- Remote -->
-        <remote fetch="https://git.sphere.ly" name="sph" />
-        <remote fetch="https://github.com/LineageOS" name="LineageOS"/>
 
-        <!-- Device -->
-        <project name="matissewifi/device_matissewifi" path="device/samsung/matissewifi" remote="github" revision="lineage15" />
-        <!-- We're not ready for matisse3g yet -->
-        <!-- <project name="matisse/android_device_matisse3g" path="device/samsung/matisse3g" remote="sph" revision="m-caf" /> -->
-        <project name="matissewifi/device_matisselte" path="device/samsung/matisselte" remote="github" revision="lineage-15.1" />
-        <project name="matissewifi/device_matissecommon" path="device/samsung/matisse-common" remote="github" revision="lineage-15.1" />
-        <project name="matissewifi/device_msm8226-common" path="device/samsung/msm8226-common" remote="github" revision="cm-14.1" />
-        <project name="sub77/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="n7x-caf" />
+  <!-- Devices -->
+  <project name="matissewifi/android_device_samsung_matissewifi" path="device/samsung/matissewifi" remote="github" revision="lineage-15.1" />
+  <project name="matissewifi/android_device_samsung_matisse-common" path="device/samsung/matisse-common" remote="github" revision="lineage-15.1" />
+  <project name="matissewifi/android_device_samsung_msm8226-common" path="device/samsung/msm8226-common" remote="github" revision="lineage-15.1" />
   
-        <!-- Kernel -->
-        <project name="matissewifi/kernel" path="kernel/samsung/msm8226" remote="github" revision="lineage-15.1" />
-
-        <!-- Vendor -->
-        <project name="matisse/android_vendor_samsung_matissewifi" path="vendor/samsung/matissewifi" remote="sph" revision="n7x-caf" />
-        <project name="matisse/android_vendor_samsung_matisse3g" path="vendor/samsung/matisse3g" remote="sph" revision="m-caf" />
-        <project name="matisse/android_vendor_samsung_matisselte" path="vendor/samsung/matisselte" remote="sph" revision="m-caf" />
-        <project name="matisse/android_vendor_samsung_matisse-common" path="vendor/samsung/matisse-common" remote="sph" revision="n7x-caf" />
-        <!-- strangely enough it seems that msm8974 graphics-vendor is required.
-             TODO: remove this binary if possible  -->
-        <project name="TheMuppets/proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="cm-14.1" />
-
-        <!-- Hardware -->
-        <project name="android_hardware_samsung" path="hardware/samsung" remote="LineageOS" revision="cm-14.1" />
-
-        <!-- Misc -->
-        <project name="android_external_stlport" path="external/stlport" remote="LineageOS" revision="lineage-15.1" />
-        <project name="android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="LineageOS" revision="lineage-15.1" />
+  <!-- vendor libs -->
+  <project name="matissewifi/android_vendor_samsung_matissewifi" path="vendor/samsung/matissewifi" remote="github" revision="lineage-15.1" />
+  <project name="matissewifi/android_vendor_samsung_matisse-common" path="vendor/samsung/matisse-common" remote="github" revision="lineage-15.1" />
+  <project name="matissewifi/android_kernel_samsung_matisse" path="kernel/samsung/msm8226" remote="github" revision="lineage-15.1" />
+  <project name="matissewifi/android_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="lineage-15.1" />
+  
+  <!-- Remote -->
+  <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="lineage-15.1" />
+  <!-- <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-15.1" /> -->
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-15.1" />
 
 </manifest>
