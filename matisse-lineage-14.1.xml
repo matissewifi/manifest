@@ -2,14 +2,10 @@
 <manifest>
     <!--
     * target: matisse
-    * date: 07.05.2018
+    * date: 02.20.201
     * rom: LineageOS/CM 14.1
     -->
-    
-  <!-- Remote -->
-  <!-- <remote fetch="https://git.sphere.ly" name="sph" />
-  <remote fetch="https://github.com/LineageOS" name="LineageOS"/> -->
-	
+
   <!-- Devices -->
   <project name="matissewifi/android_device_samsung_matissewifi" path="device/samsung/matissewifi" remote="github" revision="cm-14.1" />
   <project name="matissewifi/android_device_samsung_matisse-common" path="device/samsung/matisse-common" remote="github" revision="cm-14.1" />
@@ -21,12 +17,9 @@
   <project name="matissewifi/android_kernel_samsung_matisse" path="kernel/samsung/msm8226" remote="github" revision="cm-14.1" />
   <project name="matissewifi/android_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="cm-14.1" />
   
-  <!-- Vendor Extra -->
-  <project name="BAProductions/vendor_extra" path="vendor/extra" remote="github" revision="cm-14.1" />
-  
   <!-- Remote -->
   <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="cm-14.1" />
-  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-14.1" />
+  <!-- <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-14.1" /> -->
   <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="cm-14.1" />
   <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />
   <project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" revision="cm-14.1" />
